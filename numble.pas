@@ -41,14 +41,20 @@ begin
 
         if guess = theNumber then
         begin
-            writeln('Congratulations! You guessed the number in ', i, ' tries!');
+            writeln('Congratulations! You guessed the number in ', i, ' tries!'); writeln;
             menang := true;
             break;
         end
         else if guess < theNumber then
-            writeln('Too low! Try again.')
+        begin
+            writeln('Too low! Try again.');
+            writeln;
+        end
         else
+        begin
             writeln('Too high! Try again.');
+            writeln;
+        end;
     end;
 
     if not menang then
