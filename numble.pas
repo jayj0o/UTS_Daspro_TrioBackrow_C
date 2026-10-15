@@ -96,8 +96,8 @@ begin
     writeln('Pikirkan satu angka dari 1 sampai ', n, ', jangan kasih tahu aku ya!');
     writeln('Aku butuh maksimal ', maksTebakan, ' percobaan untuk menebaknya.'); writeln;
     writeln('Beri aku petunjuk setiap kali aku menebak:');
-    writeln('1 = Angkamu lebih besar');
-    writeln('2 = Angkamu lebih kecil');
+    writeln('1 = Lebih besar');
+    writeln('2 = Lebih kecil');
     writeln('3 = Tebakanmu benar!');
     writeln;
 
