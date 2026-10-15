@@ -70,7 +70,7 @@ var
     bawah, atas, tebakan: integer;
     kapasitas, maksTebakan: integer;
     percobaan: integer;
-    ketemu, menyerah: boolean;
+    ketemu: boolean;
 begin
     clrscr;
     writeln('=== MODE 2: Komputer yang menebak ===');
@@ -99,14 +99,12 @@ begin
     writeln('1 = Angkamu lebih besar');
     writeln('2 = Angkamu lebih kecil');
     writeln('3 = Tebakanmu benar!');
-    writeln('0 = Aku menyerah');
     writeln;
 
     bawah := 1;
     atas := n;
     percobaan := 0;
     ketemu := false;
-    menyerah := false;
 
     writeln('Baiklah, aku mulai menebak!'); writeln;
     while bawah <= atas do
@@ -119,9 +117,9 @@ begin
         write('Petunjukmu: ');
         readln(pilihan);
 
-        if (pilihan < 0) or (pilihan > 3) then
+        if (pilihan < 1) or (pilihan > 3) then
         begin
-            writeln('Petunjuk harus 0, 1, 2, atau 3!');
+            writeln('Petunjuk harus 1, 2, atau 3!');
             writeln;
             continue;
         end;
@@ -146,11 +144,6 @@ begin
                     ketemu := true;
                     break;
                 end;
-            0:
-                begin
-                    menyerah := true;
-                    break;
-                end;
         end;
     end;
 
@@ -160,8 +153,6 @@ begin
         writeln('Hore! Aku berhasil menebak angkamu dalam ', percobaan, ' percobaan!');
         writeln;
     end
-    else if menyerah then
-        writeln('Kamu menyerah, ya sudah.')
     else
         writeln('YAH, petunjukmu tidak konsisten, jadi aku tidak bisa menemukan angkanya!');
 end;
