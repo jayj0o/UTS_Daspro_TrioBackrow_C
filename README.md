@@ -1,4 +1,5 @@
 NUMBLE: Guess the Number
+
 Numble adalah game tebak angka berbasis teks yang dibuat dengan Pascal.
 Komputer memilih angka rahasia secara acak antara 1 sampai 10, lalu pemain menentukan sendiri berapa kali kesempatan menebak yang diinginkan.
 Setiap tebakan akan diberi petunjuk “Too low” atau “Too high” sampai angkanya benar atau kesempatan habis.
